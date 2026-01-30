@@ -8,17 +8,17 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     
-<script src = "sdk/blippar-webar-sdk-v2.0.7/webar-sdk/webar-sdk-v2.0.7.min.js?license-key=cf647511-9802-48ec-8bd2-0b0a0edb9001"
+<script src = blippar-webar-sdk.....
 webar-mode="marker-tracking"
-static-camera = "false"
+static-camera = "true"
 auto-start="false"
 auto-init="false"
 enable-photo-ui="true"
 render-scene-on-desktop= "false"
-show-qr-card-on-desktop="false"
-enable-tracking-on-desktop="false"
-enable-mirroring-on-desktop="false"
-hide-reset-button="false"
+show-qr-card-on-desktop= "false"
+enable-tracking-on-desktop= "false"
+enable-mirroring-on-desktop= "false"
+hide-reset-button= "false"
 auto-marker-detection ="true"
 show-guide-animation-url=""
 rendering-engine="unity"
@@ -101,14 +101,14 @@ show-guide-view="true"></script>
 
 var Yrotvalue = undefined;
 var UNITYINSTANCE = undefined;
-const cameraObjectName = "webarCamera";
-const stageObjectName = "d8c2d61c-5b80-46a4-bb2d-d5126024cc62, 3454c904-8336-4c2a-ac36-62241cdcdd18";
+const cameraObjectName = "";
+const stageObjectName = "";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/WebAR-Blipar image tracking.loader.js";
+      const loaderUrl = buildUrl + "/Cadbury-Blippar-Sample.loader.js";
       const config = {
-        dataUrl: buildUrl + "/WebAR-Blipar image tracking.data.unityweb",
-        frameworkUrl: buildUrl + "/WebAR-Blipar image tracking.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebAR-Blipar image tracking.wasm.unityweb",
+        dataUrl: buildUrl + "/Cadbury-Blippar-Sample.data.unityweb",
+        frameworkUrl: buildUrl + "/Cadbury-Blippar-Sample.framework.js.unityweb",
+        codeUrl: buildUrl + "/Cadbury-Blippar-Sample.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Blipar image tracking",
@@ -130,6 +130,7 @@ const stageObjectName = "d8c2d61c-5b80-46a4-bb2d-d5126024cc62, 3454c904-8336-4c2
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
       }
+      canvas.style.background = "url('" + buildUrl + "/Cadbury-Blippar-Sample.jpg') center / cover";
 
       const script = document.createElement("script");
       script.src = loaderUrl;
